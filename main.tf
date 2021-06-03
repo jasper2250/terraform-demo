@@ -14,14 +14,14 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroup"
-  location = "eastus"
+# resource "azurerm_resource_group" "rg" {
+#   name     = "myTFResourceGroup"
+#   location = "eastus"
 
-  tags = {
-        Environment = "Terraform Getting Started"
-    }
-}
+#   tags = {
+#         Environment = "Terraform Getting Started"
+#     }
+# }
 
 # Create a virtual network
 # resource "azurerm_virtual_network" "vnet" {
