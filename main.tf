@@ -15,12 +15,16 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroup"
+  name     = var.myTFResourceGroup
   location = "eastus"
 
   tags = {
         Environment = "Terraform Getting Started"
     }
+}
+
+variable "myTFResourceGroup" {
+    type = string
 }
 
 # Create a virtual network
