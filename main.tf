@@ -14,20 +14,21 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = var.myTFResourceGroup
-  location = "eastus"
 
-  tags = {
-        Environment = "Terraform Getting Started"
-    }
-}
+# resource "azurerm_resource_group" "rg" {
+#   name     = var.myTFResourceGroup
+#   location = "eastus"
 
-variable "myTFResourceGroup" {
-    type = string
-}
+#   tags = {
+#         Environment = "Terraform Getting Started"
+#     }
+# }
 
-# Create a virtual network
+# variable "myTFResourceGroup" {
+#     type = string
+# }
+
+# # Create a virtual network
 # resource "azurerm_virtual_network" "vnet" {
 #     name                = "myTFVnet"
 #     address_space       = ["10.0.0.0/16"]
