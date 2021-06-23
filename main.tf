@@ -23,9 +23,9 @@ resource "azurerm_resource_group" "rg" {
     }
 }
 
-# variable "myTFResourceGroup" {
-#     type = string
-# }
+variable "myTFResourceGroup" {
+    type = string
+}
 
 # # Create a virtual network
 # resource "azurerm_virtual_network" "vnet" {
