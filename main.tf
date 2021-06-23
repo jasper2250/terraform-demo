@@ -27,6 +27,7 @@ variable "myTFResourceGroup" {
     type = string
 }
 
+
 # # Create a virtual network
 # resource "azurerm_virtual_network" "vnet" {
 #     name                = "myTFVnet"
